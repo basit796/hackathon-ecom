@@ -1,7 +1,7 @@
 "use client"; // Mark this as a client component
 
 import Image from "next/image";
-import companyLogo from "../../public/logo.png"; // Replace with your logo image
+import companyLogo from "../../public/Logo.png"; // Replace with your logo image
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
