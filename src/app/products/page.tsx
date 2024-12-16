@@ -30,7 +30,7 @@ export default function Products() {
             </Link>
           </div>
         ))}
-      </div><div className="w-[1050px] -ml-40">
+      </div><div className=" w-[146%] md:-ml-40 -ml-14">
       <Image src={featureproduct3} alt="loading"></Image><Image src={featureproduct2} alt="loading" className=""></Image></div>
     </div></div>
   );

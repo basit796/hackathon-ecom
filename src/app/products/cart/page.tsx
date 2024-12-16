@@ -1,4 +1,4 @@
-"use client"; // Mark as a client component
+"use client"; // Mark this as a client component
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -25,8 +25,8 @@ export default function CheckoutPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Checkout</h1>
+    <div className="min-h-screen bg-gray-100 p-4 sm:p-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8">Checkout</h1>
 
       {isOrderPlaced ? (
         <div className="text-center">
@@ -36,7 +36,7 @@ export default function CheckoutPage() {
           <p className="text-gray-700">Thank you for your purchase.</p>
         </div>
       ) : (
-        <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <div className="max-w-md sm:max-w-xl md:max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4">Order Summary</h2>
 
           {cartItems.map((item) => (
@@ -56,7 +56,7 @@ export default function CheckoutPage() {
 
           <Button
             onClick={handlePlaceOrder}
-            className="bg-[#029FAE] w-full mt-6"
+            className="bg-[#029FAE] w-full mt-6 py-3 text-white text-lg rounded-md"
           >
             Place Order
           </Button>
@@ -65,4 +65,5 @@ export default function CheckoutPage() {
     </div>
   );
 }
+
 
