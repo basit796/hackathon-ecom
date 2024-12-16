@@ -35,11 +35,11 @@ export default function Navbar() {
         <div className="items-center">
           <Image src={mainlogo} alt="loading"/>
         </div>
-        <div className="flex gap-[12px] bg-white rounded-lg h-[44px] w-[120px] justify-center items-center text-[#272343]">
+        <Link href="/products/cart"> <div className="flex gap-[12px] bg-white rounded-lg h-[44px] w-[120px] justify-center items-center text-[#272343]">
           <ShoppingCart className="size-[22px]" />
           <h1 className=" font-bold">Cart</h1>
           <Circle className=""></Circle>
-        </div>
+        </div></Link>
       </div>
       <div className="bg-white w-full h-[74px]   px-[22%] flex justify-between items-center shadow-lg">
       <div className="flex space-x-8 text-[14px]">

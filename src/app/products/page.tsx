@@ -23,8 +23,8 @@ export default function Products() {
             key={product.id}
             className="bg-white p-4 shadow rounded hover:shadow-lg "
           ><h1 className="w-full">{product.pic}</h1>
-            <h2 className="text-[13px]">{product.name}</h2>
-            <p className="text-gray-600 text-[13px]">{product.price}</p>
+            <h2 className="text-[11px] text-gray-600">{product.name}</h2>
+            <p className=" text-[13px]">{product.price}</p>
             <Link href={`/products/${product.id}`} className="">
               <div className="text-blue-500 hover:underline text-[13px]">View Details</div>
             </Link>

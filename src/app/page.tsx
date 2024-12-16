@@ -13,8 +13,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <div className="flex justify-center   overflow-hiden">
-        <div className=" md:h-[500px] w-[60%] mt-[2px]  bg-[#f0f2f3] md:flex overflow-hiden rounded-3xl items-center justify-center">
+      <div className="flex justify-center   overflow-hiden ">
+        <div className=" md:h-[500px] w-[60%] mt-[2px] bg-[#f0f2f3] md:flex overflow-hiden rounded-3xl items-center justify-center">
           {" "}
           <div className="md:text-left text-center">
             <h1 className="sm:text-[14px] text-[80%] text-[#272343]">
@@ -41,11 +41,11 @@ export default function Home() {
       <div className="flex   justify-self-center w-[60%]">
         <Image alt="loading" src={companylogo} className=" "></Image>
       </div>
-      <div className="flex justify-center">
-        <Link href="/products"><Image
+      <div className="">
+        <Link href="/products" className=" flex justify-center "><Image
           src={featuredproduct}
           alt="loading"
-          className="w-[88%]  "
+          className="w-[88%]   "
         ></Image></Link>
       </div>
       <div className="justify-center flex mt-20 ">
